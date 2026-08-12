@@ -46,4 +46,6 @@ Chatters and streamers can use **!notme** to opt-out of buttification of your me
 
 Mod commands currently in production!
 
+***Public source showcase. Production repository is private.***
+
 

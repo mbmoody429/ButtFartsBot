@@ -6,11 +6,17 @@ Add it to your stream here:
 
 https://buttsbot.up.railway.app
 
-This repository is a public source showcase. It contains selected, non-deployment code so people can browse how ButtFartsBot works without exposing the private production repository or deployment configuration.
+## About
 
-## What it does
+ButtFartsBot is a modern Twitch recreation inspired by the classic `pinguinoEO/buttbot_twitch` project, rebuilt with Node.js, Twitch EventSub, Helix, OAuth, and TeX-style hyphenation.
 
-ButtFartsBot supports multiple selectable modes per channel:
+For more custom Twitch and Discord bots, visit **Mare's Bot Shop**:
+
+https://www.patreon.com/cw/MaresBotShop
+
+## Modes
+
+Choose multiple modes per channel, or use **Select All** to randomize between all of them:
 
 - Butt
 - Cock
@@ -20,23 +26,24 @@ ButtFartsBot supports multiple selectable modes per channel:
 - UwU
 - R's → W's
 - C's → K's
+- Select All
 
-Streamers can select one, several, or all modes and choose how often the bot activates.
+Word modes use TeX-style English hyphenation to swap part of a word while keeping the result readable. Letter modes randomly replace only some matching letters. URLs, mentions, commands, unchanged results, and other bad outputs are filtered out.
 
-Chatters can use `!notme` to opt out of having their messages transformed and `!pickme` to opt back in.
+By default, eligible chat messages have a **1 in 40** chance of triggering the bot.
 
-The word-replacement modes use TeX-style English hyphenation to swap part of a word while keeping the result readable. Letter modes randomly replace only some matching letters. URLs, mentions, commands, unchanged results, and other bad outputs are filtered out.
+Choose the frequency per channel:
 
-## About this source showcase
+- A lot (1 in 15 messages)
+- A good amount (1 in 40 messages)
+- A little bit (1 in 80 messages)
 
-The production repository is private. Deployment configuration, secrets, token persistence, admin internals, Railway configuration, and production-only infrastructure are intentionally not included here.
+## Streamer controls
 
-This repository is provided for browsing and learning from the implementation. It is not the deployment source for the live bot.
+The same ButtFartsBot page handles everything. Streamers can add the bot with a chosen and frequency mode, add the bot with default settings, switch modes and frequencies at any time, or remove it from their channel.
 
-## Mare's Bot Shop
+Chatters and streamers can use **!notme** to opt-out of buttification of your messages. If you'd like to opt back in, use **!pickme** to allow ButtFartsBot to buttify your messages again.
 
-For more custom Twitch and Discord bots, visit Mare's Bot Shop:
+Mod commands currently in production!
 
-https://www.patreon.com/cw/MaresBotShop
 
-Built because of NMD96 and Qipsir. Ty guys for this delightful idea.
